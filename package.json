@@ -3,6 +3,10 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "start": "bun server.ts",
+    "scrap": "bun index.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
@@ -10,6 +14,8 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "dayjs": "^1.11.19",
+    "express": "^5.2.1",
     "puppeteer": "^24.34.0",
     "puppeteer-core": "^24.34.0"
   }

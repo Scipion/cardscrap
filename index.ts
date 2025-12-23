@@ -52,7 +52,9 @@ for (let i = 0; i < csvdata.length; i++) {
   freshData[i] = {};
   freshData[i].name = csvdata[i].name;
   freshData[i].id = csvdata[i].id;
-  freshData[i].price = price;
+  freshData[i].price = Number(
+    (price || "").replace("€", "").trim().replace(",", ".")
+  );
   freshData[i].lastupdate = new Date().toISOString();
 
   // Print the full title.
