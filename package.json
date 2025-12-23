@@ -1,0 +1,19 @@
+{
+  "name": "cardscrap",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@fast-csv/format": "^5.0.5",
+    "@fast-csv/parse": "^5.0.5",
+    "fast-csv": "^5.0.5",
+    "puppeteer": "^24.34.0",
+    "puppeteer-core": "^24.34.0"
+  }
+}
